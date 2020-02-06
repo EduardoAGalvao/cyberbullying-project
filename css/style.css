@@ -15,7 +15,7 @@ BEJE: #F2B544
 /*PADRONIZAÇÃO DE ELEMENTOS E CLASSES*/
 
 .background{
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -23,8 +23,6 @@ BEJE: #F2B544
 
 .conteudo{
   height: inherit;
-  color: #ffffff;
-  background-color: red;
 }
 
 section, .section{
@@ -39,14 +37,29 @@ section, .section{
   margin-right: auto;
 }
 
-h1{
+h1, h2, h3{
   padding: 30px 0px;
   box-sizing: border-box;
 }
 
+.fundo_escuro{
+  background-color: #26161F;
+  color: white;
+}
+
+.fundo_beje{
+  background-color: #DB8D32;
+  color: white;
+}
+
+.fundo_azul_escuro{
+  background-color: #049DD9;
+  color: white;
+}
+
 /*********HOME*********/
 #background_abertura{
-  background-image: url("../img/cyber1.jpg");
+  background-image: url("../img/abertura_intro.jpg");
   width: 100%;
   height: 400px;
 }
@@ -59,10 +72,11 @@ nav{
   display: flex;
   align-items: center;
   z-index: 300;
-  background-color: red;
+  background-color: black;
 }
 
 #menu{
+  margin: 0px;
   width: 100%;
   height: auto;
   display: flex;
@@ -82,8 +96,15 @@ nav{
 }
 
 .menu_item a {
-  color: #000000;
+  color: #F2B544;
+  font-size: 20px;
+  transition: 1s;
   text-decoration: none;
+}
+
+.menu_item a: hover{
+  font-size: 22px;
+  transition: 1s;
 }
 
 .sticky {
@@ -104,26 +125,98 @@ nav{
 
 .conteudo_definicao{
   width: inherit;
-  background-color: blue;
-  height: 350px;
+  height: 430px;
   margin-bottom: 15px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .definicao_texto{
   height: inherit;
-  width: 30%;
-  background-color: pink;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px 0px 50px;
+  box-sizing: border-box;
+}
+
+.definicao_texto p{
+  font-size: 18px;
+  text-align: center;
 }
 
 .definicao_imagem{
-  height: inherit;
+  height: auto;
   width: 40%;
-  background-color: aqua;
+}
+
+.definicao_imagem img{
+  width: 100%;
+  height: inherit;
 }
 
 .conteudo_circular{
-  border-radius: 200px;
+  border-radius: 250px;
+}
+
+#descricao_tipos{
+  padding-top: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#descricao_tipos p{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/*ESTATÍSTICAS*/
+#banner_estatisticas{
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/dados_famisafe.png");
+}
+
+.conteudo_estatistica_graficos{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+
+.estatistica_grafico{
+  width: 45%;
+  height: inherit;
+}
+
+.estatistica_grafico img{
+  width: 100%;
+  height: auto;
+}
+
+/*QUIZ*/
+#setor_quiz{
+  height: 550px;
+}
+
+#banner_quiz{
+  background-image: url("../img/banner_quiz.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 550px;
+  width: 100%;
 }

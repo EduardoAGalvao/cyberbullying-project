@@ -22,7 +22,7 @@
 
   </head>
   <body>
-    <div class="container_conteudo">
+    <div id="background_conteudo" class="container_conteudo">
       
       <div id="background_abertura" class="background"></div>
       
@@ -35,22 +35,22 @@
             <nav id="navbar">
               <ul id="menu">
                 <li class="menu_item">
-                  <a href="index.php">O QUE É CYBERBULLYING?</a>
+                  <a href="#definicao">O QUE É CYBERBULLYING?</a>
                 </li>
                 <li class="menu_item">
-                  <a href="empresa.php">ESTATÍSTICAS</a>
+                  <a href="#estatisticas">ESTATÍSTICAS</a>
                 </li>
                 <li class="menu_item">
-                  <a href="curiosidades.php">VÍDEOS</a>
+                  <a href="#alertar">COMO PROCURAR AJUDA</a>
                 </li>
                 <li class="menu_item">
-                  <a href="promocoes.php">QUIZ</a>
+                  <a href="#quiz">QUIZ</a>
                 </li>
                 <li class="menu_item">
-                  <a href="lojas.php">COMO ALERTAR</a>
+                  <a href="#videos">VÍDEOS</a>
                 </li>
                 <li class="menu_item">
-                  <a href="mensalistic.php">ONDE PROCURAR AJUDA</a>
+                  <a href="#denunciar">ONDE DENUNCIAR</a>
                 </li>
               </ul>
             </nav>
@@ -94,26 +94,100 @@
         <div class="conteudo center">
           
           <!--DEFINIÇÃO-->
-          <section class="container">
-            <h1><a name=""></a>O que é o Cyberbullying?</h1>
+          <section class="container" id="definicao">
+            <h1>O que é o Cyberbullying?</h1>
             <div id="setor_definicao">
               <div class="conteudo_definicao">
-                <div class="definicao_texto conteudo_circular"></div>
-                <div class="definicao_imagem"></div>
+                <div class="definicao_texto conteudo_circular fundo_beje">
+                  <p>O termo “Cyberbullying” corresponde às práticas de agressão moral organizadas por grupos, contra uma determinada pessoa e alimentadas via internet.</p>
+                  <p>Com o aumento do uso de redes sociais, esse tipo de prática discriminatória e vexatória tem aumentado consideravelmente nos últimos anos, sobretudo, entre os jovens.</p>
+                </div>
+                <div class="definicao_imagem">
+                  <img src="img/cyber1.jpg" alt="" title="">
+                </div>
               </div>
               <div class="conteudo_definicao">
-                <div class="definicao_imagem"></div>
-                <div class="definicao_texto conteudo_circular"></div>
+                <div class="definicao_texto conteudo_comum">
+                  <p>O termo “Cyberbullying” corresponde às práticas de agressão moral organizadas por grupos, contra uma determinada pessoa e alimentadas via internet.</p>
+                </div>
+                <div class="definicao_imagem">
+                  <img src="img/cyber1.jpg" alt="" title="">
+                </div>
+                <div class="definicao_texto">
+                  <p>O termo “Cyberbullying” corresponde às práticas de agressão moral organizadas por grupos, contra uma determinada pessoa e alimentadas via internet.</p>
+                </div>
               </div>
               <div class="conteudo_definicao">
-                <div class="definicao_texto"></div>
-                <div class="definicao_imagem"></div>
+                <div class="definicao_imagem">
+                  <img src="img/cyber1.jpg" alt="" title="">
+                </div>
+                <div class="definicao_texto conteudo_circular fundo_azul_escuro">
+                  <p>Em outras palavras, o “cyberbullying” é um assédio moral que corresponde à manifestação de práticas hostis. Esse bullying virtual tem o intuito de ridicularizar, assediar e/ou perseguir alguém de forma exacerbada.</p>
+                  <p>O “cyberbullying” é a violência virtual que ocorre geralmente com as pessoas tímidas e indefesas, ou simplesmente por não caírem na simpatia dos tiranos.</p>
+                </div>
               </div>
+              <div id="descricao_tipos">
+                
+                <h2>Os tipos de bullying</h2>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Assédio
+                    </button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                        Flaming
+                    </button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                        Exclusão
+                    </button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                        Outing
+                    </button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                        Masquerading
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample" data-parent="#descricao_tipos">
+                    <div class="card card-body">
+                        Envio de conteúdo malicioso ou ofensivo de maneira recorrente, também conhecido como cyberstalking, e inclui ameaças contínuas e mal tratamento. 
+                    </div>
+                </div>
+                
+                <div class="collapse" id="collapseExample2" data-parent="#descricao_tipos">
+                    <div class="card card-body">
+                        Refere-se mais a brigas on-line e discussões que ocorrem entre trocas de mensagens, e-mail e chats. É o tipo de bullying que envolve linguagem e imagens pesadas.
+                    </div>
+                </div>
+                
+                <div class="collapse" id="collapseExample3" data-parent="#descricao_tipos">
+                    <div class="card card-body">
+                        Escolha de uma pessoa, deixando-a fora de ambientes online como sites e chats. O grupo que faz isso é rude e cruel, comentando coisas nada boas sobre a pessoa que será excluída.
+                    </div>
+                </div>
+                
+                <div class="collapse" id="collapseExample4" data-parent="#descricao_tipos">
+                    <div class="card card-body">
+                        Isso acontece quando a pessoa que faz cyberbullying divulga informações pessoais e confidenciais sobre alguém. Isso inclui o uso de vídeos e informações da pessoa.
+                    </div>
+                </div>
+                
+                <div class="collapse" id="collapseExample5" data-parent="#descricao_tipos">
+                    <div class="card card-body">
+                        Isto é um ataque mascarado usando perfil falso. A pessoa que faz o cyberbullying cria um identidade falsa para assediar a pessoa de maneira anônima. Eles tentam ser outra pessoa e enviam mensagens intimidadoras para a pessoa alvo.
+                    </div>
+                </div>
+              </div>
+                
             </div>
           </section>
           
+          <div id="banner_estatisticas">
+          
+          </div>
+          
           <!--ESTATÍSTICAS-->
-          <section class="container">
+          <section class="container" id="estatisticas">
             <h1><a name=""></a>Dados e Fatos</h1>
             <h2>Como é a realidade do cyberbullying? E onde você estuda?</h2>
             <div id="setor_estatistica">
@@ -121,13 +195,24 @@
               <div class="conteudo_estatistica">
                 <div class="conteudo_estatistica_apresentacao">
                   <h3>Do lado de fora</h3>
-                  <p>Os dados apresentados a seguir fazem parte de uma pesquisa da Intel, realizada em ...</p>
+                  <p>Os dados apresentados a seguir fazem parte de uma pesquisa da Intel, realizada em 2015 com 507 crianças no Brasil.</p>
                 </div>
                 <div class="conteudo_estatistica_graficos">
-                  <div class="estatistica_grafico"></div>
-                  <div class="estatistica_grafico"></div>
-                  <div class="estatistica_grafico"></div>
-                </div>  
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_intel1.png" alt="" title="">
+                  </div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_intel2.png" alt="" title="">
+                  </div>
+                </div>
+                <div class="conteudo_estatistica_graficos">
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_intel3.png" alt="" title="">
+                  </div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_intel4.png" alt="" title="">
+                  </div>
+                </div>
               </div>
               
               <div class="conteudo_estatistica">
@@ -137,23 +222,33 @@
                 </div>
                 <h3>Aqueles que já tiveram contato com cyberbullying</h3>
                 <div class="conteudo_estatistica_graficos">
-                  <div class="estatistica_grafico"></div>
-                  <div class="estatistica_grafico"></div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_google1.png" alt="" title="">
+                  </div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_google2.png" alt="" title="">
+                  </div>
                 </div>  
               </div>
               
               <div class="conteudo_estatistica">
                 <h3>Aqueles que já sofreram ou presenciaram cyberbullying</h3>
                 <div class="conteudo_estatistica_graficos">
-                  <div class="estatistica_grafico"></div>
-                  <div class="estatistica_grafico"></div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_google3.png" alt="" title="">
+                  </div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_google4.png" alt="" title="">
+                  </div>
                 </div>  
               </div>
               
               <div class="conteudo_estatistica">
                 <h3>E a solução?</h3>
                 <div class="conteudo_estatistica_graficos">
-                  <div class="estatistica_grafico"></div>
+                  <div class="estatistica_grafico">
+                    <img src="./img/grafico_google5.png" alt="" title="">
+                  </div>
                 </div>  
               </div>
               
@@ -161,7 +256,7 @@
           </section>
           
           <!--COMO REAGIR-->
-          <section class="container">
+          <section class="container" id="alertar">
             <h1><a name=""></a>Como lidar com o cyberbullying?</h1>
             <div id="setor_reagir">
               
@@ -199,50 +294,34 @@
           </section>
           
           <!--QUIZZ-->
-          <section class="container">
+          <section id="quiz">
             <h1><a name=""></a>Inserir link para o quizz ou imagem representativa</h1>
-            <div id="setor_quizz">
-  
+            <div id="setor_quiz">
+              <a href="https://new.safernet.org.br/content/infografico-bullying#">
+                <div id="banner_quiz"> 
+                </div>
+              </a>  
             </div>
           </section>
           
           <!--VÍDEOS-->
-          <section class="container">
+          <section class="container" id="videos">
             <h1><a name=""></a>Ao vivo e em cores</h1>
             <h2>Especialistas e a realidade do cyberbullying</h2>
             <div id="setor_videos">
               
               <div class="videos_midia">
                 <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                  <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="videos_midia">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="videos_midia">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="videos_midia">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="videos_midia">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-              </div>
+              
               
             </div>
           </section>
           
           <!--DENUNCIAR-->
-          <section class="container">
+          <section class="container" id="denunciar">
             <h1><a name=""></a>Como denunciar?</h1>
             <div id="setor_denuncia">
               <div class="conteudo_denuncia">
