@@ -61,7 +61,7 @@ h1, h2, h3{
 #background_abertura{
   background-image: url("../img/abertura_intro.jpg");
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 /*MENU*/
@@ -218,5 +218,69 @@ nav{
   background-position: center;
   background-attachment: fixed;
   height: 550px;
+  width: 100%;
+}
+
+/*COMO REAGIR*/
+.reagir_conteudo{
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.reagir_imagem, 
+.reagir_topicos{
+  width: 45%;
+  height: inherit;
+}
+
+.reagir_imagem img{
+  height: inherit;
+  width: 100%;
+}
+
+/*VÍDEOS*/
+.videos_midia{
+  width: 30%;
+  height: 300px;
+  margin: 30px 0px;
+}
+
+#setor_videos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*COMO DENUNCIAR*/
+.conteudo_denuncia{
+  height: 300px;
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.denuncia_texto,
+.denuncia_imagem{
+  width: 45%;
+  height: inherit;
+}
+
+.denuncia_imagem img{
+  height: inherit;
+  width: auto;
+}
+
+.setor_denuncia_contatos{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*FOOTER*/
+footer{
+  height: 200px;
   width: 100%;
 }
