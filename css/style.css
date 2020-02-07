@@ -112,7 +112,7 @@ nav{
 
 .menu_item a {
   color: #F2B544;
-  font-size: 20px;
+  font-size: 24px;
   transition: 1s;
   text-decoration: none;
 }
@@ -275,6 +275,10 @@ nav{
   width: auto;
 }
 
+#foto_atingido{
+  width: 250px !important; 
+}
+
 #banner_reagir{
   height: 500px;
   background-size: cover;
@@ -358,6 +362,19 @@ nav{
 
 .contato_senai p{
   line-height: 1 !important;
+}
+
+/*BANNER - FINALIZAÇÃO*/
+#banner_finalizacao{
+  height: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+#banner_finalizacao img{
+  width: auto;
+  height: inherit;
 }
 
 /*FOOTER*/
