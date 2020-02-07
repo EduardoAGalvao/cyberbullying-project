@@ -37,8 +37,13 @@ section, .section{
   margin-right: auto;
 }
 
-h1, h2, h3{
-  padding: 30px 0px;
+h1{
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+
+h2, h3, h4, h5{
+  padding: 5px 0px;
   box-sizing: border-box;
 }
 
@@ -55,6 +60,16 @@ h1, h2, h3{
 .fundo_azul_escuro{
   background-color: #049DD9;
   color: white;
+}
+
+.conteudo_circular{
+  border-radius: 250px;
+}
+
+.referencia{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
 }
 
 /*********HOME*********/
@@ -159,22 +174,29 @@ nav{
   height: inherit;
 }
 
-.conteudo_circular{
-  border-radius: 250px;
-}
-
 #descricao_tipos{
   padding-top: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 300px;
 }
 
 #descricao_tipos p{
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+#botoes_tipos{
+  margin-top: 20px;
+}
+
+#img_tipos{
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 /*ESTATÍSTICAS*/
@@ -206,6 +228,13 @@ nav{
   height: auto;
 }
 
+#icone_calculadora{
+  width: 100px;
+  height: auto;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+
 /*QUIZ*/
 #setor_quiz{
   height: 550px;
@@ -224,21 +253,35 @@ nav{
 /*COMO REAGIR*/
 .reagir_conteudo{
   display: flex;
-  height: 300px;
+  height: 400px;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
   margin: 40px 0px;
 }
-
-.reagir_imagem, 
+ 
 .reagir_topicos{
   width: 45%;
   height: inherit;
 }
 
+.reagir_imagem{
+  width: 30%;
+  height: inherit;
+}
+
 .reagir_imagem img{
   height: inherit;
-  width: 100%;
+  width: auto;
+}
+
+#banner_reagir{
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-image: url('../img/banner_lidar.png');
 }
 
 /*VÍDEOS*/
@@ -260,6 +303,7 @@ nav{
   width: 100%;
   margin: 20px 0px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -269,18 +313,67 @@ nav{
   height: inherit;
 }
 
+.denuncia_texto{
+  line-height: 2.5;
+}
+
+.denuncia_texto p {
+  margin-top: 60px;
+}
+
 .denuncia_imagem img{
-  height: inherit;
+  height: auto;
   width: auto;
 }
 
 .setor_denuncia_contatos{
   display: flex;
   justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contato_denuncia{
+  width: 30%;
+  height: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato_denuncia img{
+  width: auto;
+  height: inherit;
+}
+
+.contato_titulo{
+  color: #049DD9;
+  font-weight: bold;
+}
+
+.contato_senai{
+  width: auto;
+}
+
+.contato_senai p{
+  line-height: 1 !important;
 }
 
 /*FOOTER*/
 footer{
+  margin-top: 40px;
   height: 200px;
   width: 100%;
+}
+
+.conteudo_footer img{
+  width: auto;
+  height: 100px;
+}
+
+#footer_conteudos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

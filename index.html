@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Eduardo Galvão">
     <meta name="copyright" content="© 2020 Eduardo Galvão"/>
-    <meta name="description" content=""/>
+    <meta name="description" content="Website criado para fins educativos e didáticos para orientar quanto a causa do cyberbullying aos estudantes e profissionais da instituição de ensino profissionalizante SENAI."/>
 
-    <title></title>
-    <link rel="icon" href="">
+    <title>#CompartilheAjuda - Contra o Cyberbullying</title>
+    <link rel="icon" href="./img/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
@@ -69,20 +69,24 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="./img/abertura.jpeg" alt="First slide">
+              <img class="d-block w-100" src="./img/banner_carousel1.png" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./img/abertura.jpeg" alt="Second slide">
+              <a href="#denunciar">
+                <img class="d-block w-100" src="./img/banner_carousel2.png" alt="Second slide">
+              </a>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./img/abertura.jpeg" alt="Third slide">
+              <a href="https://new.safernet.org.br/content/infografico-bullying#" target="_blank">
+                <img class="d-block w-100" src="./img/banner_carousel3.png" alt="Third slide">
+              </a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" id="setaCarrosselPrev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next" id="setaCarrosselNext" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
@@ -90,12 +94,13 @@
       </div>
 
       <!--CONTEÚDO-->
-      <div id="">
+      <div id="conteudo_principal">
         <div class="conteudo center">
           
           <!--DEFINIÇÃO-->
           <section class="container" id="definicao">
             <h1>O que é o Cyberbullying?</h1>
+            <h3>Em 2018, o Brasil ficou em segundo lugar em um ranking global de ofensas na internet em uma pesquisa feita pelo Instituto Ipsos. Conheça mais sobre essa prática tão presente na vida dos jovens.</h3>
             <div id="setor_definicao">
               <div class="conteudo_definicao">
                 <div class="definicao_texto conteudo_circular fundo_beje">
@@ -103,47 +108,59 @@
                   <p>Com o aumento do uso de redes sociais, esse tipo de prática discriminatória e vexatória tem aumentado consideravelmente nos últimos anos, sobretudo, entre os jovens.</p>
                 </div>
                 <div class="definicao_imagem">
-                  <img src="img/cyber1.jpg" alt="" title="">
+                  <img src="img/definicao1.png" class="rounded" alt="Imagem de grupos de jovens comentando sobre cyberbullying de forma ilustrativa." title="Imagem de grupos de jovens comentando sobre cyberbullying de forma ilustrativa.">
                 </div>
               </div>
               <div class="conteudo_definicao">
                 <div class="definicao_texto conteudo_comum">
-                  <p>O termo “Cyberbullying” corresponde às práticas de agressão moral organizadas por grupos, contra uma determinada pessoa e alimentadas via internet.</p>
+                  <p>As comunidades virtuais, os e-mails, as redes sociais, os blogs e os celulares são meios de convivência dos jovens, Nessas vias, eles se expõem publicamente, fazem amigos e compartilham ideias.</p>
+                  <p>Entre adolescentes, jovens e estudantes, esses conflitos são comuns e fazem parte da afirmação da identidade. Pesquisas apontam que, entre os adolescentes, esse tipo de prática é mais comum nas meninas.</p>
                 </div>
                 <div class="definicao_imagem">
-                  <img src="img/cyber1.jpg" alt="" title="">
+                  <img src="img/definicao2.png" alt="Desenho de jovem garota chorando em um smartphone gigante metafórico." title="Desenho de jovem garota chorando em um smartphone gigante metafórico.">
                 </div>
                 <div class="definicao_texto">
-                  <p>O termo “Cyberbullying” corresponde às práticas de agressão moral organizadas por grupos, contra uma determinada pessoa e alimentadas via internet.</p>
+                  <p>Importante destacar que o “cyberbullying” pode trazer consequências drásticas, como a morte ou suicídio de alguém..</p>
+                  <p>Isso ocorre em maior número entre os jovens, os quais apresentam grandes dificuldades de lidar com os problemas. Assim, eles se isolam, entram em depressão e, em alguns casos, necessitam de apoio psicológico</p>
                 </div>
               </div>
               <div class="conteudo_definicao">
                 <div class="definicao_imagem">
-                  <img src="img/cyber1.jpg" alt="" title="">
+                  <img src="img/definicao3.png" class="rounded" alt="Imagem de jovem garota chorando olhando para a tela de um notebook." title="Imagem de jovem garota chorando olhando para a tela de um notebook.">
                 </div>
                 <div class="definicao_texto conteudo_circular fundo_azul_escuro">
                   <p>Em outras palavras, o “cyberbullying” é um assédio moral que corresponde à manifestação de práticas hostis. Esse bullying virtual tem o intuito de ridicularizar, assediar e/ou perseguir alguém de forma exacerbada.</p>
                   <p>O “cyberbullying” é a violência virtual que ocorre geralmente com as pessoas tímidas e indefesas, ou simplesmente por não caírem na simpatia dos tiranos.</p>
                 </div>
               </div>
+              <div class="conteudo_definicao">
+                <div class="definicao_texto">
+                  <p>Infelizmente, o uso da internet para a organização de ataques à honra das pessoas tem sido uma prática muito comum. Essas ações têm causado grandes estragos na vida da pessoa agredida.</p>
+                  <p>Assim, muitas pessoas enfrentam as consequências de páginas intituladas “Eu odeio fulana”, onde a vítima, na maioria os grupos minoritários (mulheres, negros, homossexuais, etc.), vira alvo de todo tipo de xingamento.</p>
+                </div>
+              </div>
+              <p class="referencia text-right">Fonte de pesquisa, textos e/ou imagens: <a href="https://www.todamateria.com.br/cyberbullying/">Toda Matéria - Cyberbullying</a></p>
+              
+              <!--TIPOS DE CYBERBULLYING-->
               <div id="descricao_tipos">
                 
-                <h2>Os tipos de bullying</h2>
-
-                <p>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <h2>Os tipos de cyberbullying</h2>
+                <h4>Clique nos botões abaixo para entender sobre os tipos de cyberbullying</h4>
+                
+                <p id="botoes_tipos">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Assédio
                     </button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                         Flaming
                     </button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
                         Exclusão
                     </button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
                         Outing
                     </button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
                         Masquerading
                     </button>
                 </p>
@@ -177,77 +194,91 @@
                         Isto é um ataque mascarado usando perfil falso. A pessoa que faz o cyberbullying cria um identidade falsa para assediar a pessoa de maneira anônima. Eles tentam ser outra pessoa e enviam mensagens intimidadoras para a pessoa alvo.
                     </div>
                 </div>
+                
               </div>
+              <div class="text-center"> 
+                <img id="img_tipos" src="img/tipos_cyberbullying.png" alt="Ilustração com grupo de jovens praticando cyberbullying" title="Ilustração com grupo de jovens praticando cyberbullying"/>
+              </div>
+              
+              <p class="referencia text-right">Fonte de pesquisa, textos e/ou imagens: <a href="https://famisafe.wondershare.com/br/no-cyberbullying-on-social-media.html">Famisafe - Cyberbullying nas redes sociais</a></p>
                 
             </div>
           </section>
           
+          <!--BANNER ESTATÍSTICAS-->
           <div id="banner_estatisticas">
           
           </div>
           
           <!--ESTATÍSTICAS-->
           <section class="container" id="estatisticas">
-            <h1><a name=""></a>Dados e Fatos</h1>
-            <h2>Como é a realidade do cyberbullying? E onde você estuda?</h2>
+            <h1>Dados e Fatos</h1>
+            <h3>Qual a situação do cyberbullying no Brasil? E onde você estuda? Os dados a seguir vão revelar muitos detalhes sobre a realidade dessa prática.</h3>
+            
+            <div class="text-center">
+              <img id="icone_calculadora" src="img/calculadora.png" alt="ícone de calculadora" title="ícone de calculadora"/>
+            </div>
+            
             <div id="setor_estatistica">
               
               <div class="conteudo_estatistica">
                 <div class="conteudo_estatistica_apresentacao">
-                  <h3>Do lado de fora</h3>
+                  <h4>Do lado de fora</h4>
                   <p>Os dados apresentados a seguir fazem parte de uma pesquisa da Intel, realizada em 2015 com 507 crianças no Brasil.</p>
                 </div>
                 <div class="conteudo_estatistica_graficos">
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_intel1.png" alt="" title="">
+                    <img src="./img/grafico_intel1.png" alt="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying" title="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying">
                   </div>
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_intel2.png" alt="" title="">
+                    <img src="./img/grafico_intel2.png" alt="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying" title="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying">
                   </div>
                 </div>
                 <div class="conteudo_estatistica_graficos">
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_intel3.png" alt="" title="">
+                    <img src="./img/grafico_intel3.png" alt="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying" title="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying">
                   </div>
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_intel4.png" alt="" title="">
+                    <img src="./img/grafico_intel4.png" alt="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying" title="Gráfico baseado em pesquisa da Intel com dados sobre cyberbullying">
                   </div>
                 </div>
               </div>
+              
+              <p class="referencia text-right">Fonte de pesquisa, textos e/ou imagens: <a href="https://canaltech.com.br/comportamento/pesquisa-da-intel-revela-dados-sobre-cyberbullying-no-brasil-46105/">CanalTech - Pesquisa da Intel Revela dados sobre cyberbullying no Brasil</a></p>
               
               <div class="conteudo_estatistica">
                 <div class="conteudo_estatistica_apresentacao">
-                  <h3>Do lado de dentro</h3>
-                  <p>E no SENAI? Qual a realidade dos seus colegas?</p>
+                  <h4>Do lado de dentro</h4>
+                  <p>E no SENAI? Qual a realidade dos seus colegas? Uma pesquisa realizada no SENAI Prof. Vicente Amato, baseada em 104 respostas, revelou alguns dados.</p>
                 </div>
-                <h3>Aqueles que já tiveram contato com cyberbullying</h3>
+                <h4>Aqueles que já tiveram contato com cyberbullying</h4>
                 <div class="conteudo_estatistica_graficos">
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_google1.png" alt="" title="">
+                    <img src="./img/grafico_google1.png" alt="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying." title="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying.">
                   </div>
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_google2.png" alt="" title="">
+                    <img src="./img/grafico_google2.png" alt="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying." title="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying.">
                   </div>
                 </div>  
               </div>
               
               <div class="conteudo_estatistica">
-                <h3>Aqueles que já sofreram ou presenciaram cyberbullying</h3>
+                <h4>Aqueles que já sofreram ou presenciaram cyberbullying</h4>
                 <div class="conteudo_estatistica_graficos">
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_google3.png" alt="" title="">
+                    <img src="./img/grafico_google3.png" alt="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying." title="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying.">
                   </div>
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_google4.png" alt="" title="">
+                    <img src="./img/grafico_google4.png" alt="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying." title="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying.">
                   </div>
                 </div>  
               </div>
               
               <div class="conteudo_estatistica">
-                <h3>E a solução?</h3>
+                <h4>E a solução?</h4>
                 <div class="conteudo_estatistica_graficos">
                   <div class="estatistica_grafico">
-                    <img src="./img/grafico_google5.png" alt="" title="">
+                    <img src="./img/grafico_google5.png" alt="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying." title="Gráfico baseado em pesquisa realizada na instituição de ensino profissionalizante SENAI sobre cyberbullying.">
                   </div>
                 </div>  
               </div>
@@ -266,17 +297,17 @@
             <div id="setor_reagir">
               
               <!--VÍTIMA-->
-              <h2>A vítima</h2>
+              <h2>A pessoa atingida</h2>
               <div class="reagir_conteudo">
                 <div class="reagir_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img src="img/reagir1.png" alt="Imagem de rapaz com semblante triste." title="Imagem de rapaz com semblante triste."/>
                 </div>
                 <div class="reagir_topicos">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Não respondam a nenhuma mensagem de cyberbullying;</li>
-                    <li class="list-group-item">Salve as mensagens para ter evidências;</li>
-                    <li class="list-group-item">Conte a situação para um adulto;</li>
-                    <li class="list-group-item">Analise contatar a polícia local.</li>
+                    <li class="list-group-item">Não responda a nenhuma mensagem de cyberbullying</li>
+                    <li class="list-group-item">Salve as mensagens para ter evidências</li>
+                    <li class="list-group-item">Conte a situação para um adulto</li>
+                    <li class="list-group-item">Analise se é pertinente informar à polícia local</li>
                   </ul>
                 </div>
               </div>
@@ -286,16 +317,16 @@
               <div class="reagir_conteudo">
                 <div class="reagir_topicos">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Saiba mais sobre o cyberbullying.</li>
-                    <li class="list-group-item">Tenha conversas abertas sobre o uso da internet.</li>
-                    <li class="list-group-item">Use um aplicativo de controle parental para monitorar as atividades da criança on-line</li>
-                    <li class="list-group-item">Converse com eles e lhes explique que o cyberbullying é errado. </li>
-                    <li class="list-group-item">Leve a situação a sério e não culpe ninguém por isso.</li>
-                    <li class="list-group-item">Compreenda os meios de denunciar e outras responsabilidades.</li>
+                    <li class="list-group-item">Saiba mais sobre o cyberbullying</li>
+                    <li class="list-group-item">Tenha conversas abertas sobre o uso da internet</li>
+                    <li class="list-group-item">Em caso de menores, use um aplicativo de controle parental para monitorar as atividades da criança on-line</li>
+                    <li class="list-group-item">Converse com eles e explique que o cyberbullying é errado</li>
+                    <li class="list-group-item">Leve a situação a sério e não culpe ninguém por isso</li>
+                    <li class="list-group-item">Compreenda os meios de denunciar e outras responsabilidades</li>
                   </ul>
                 </div>
                 <div class="reagir_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img src="img/reagir2.png" alt="Imagem de adultos com semblante questionador." title="Imagem de adultos com semblante questionador."/>
                 </div>
               </div>
               
@@ -303,26 +334,28 @@
               <h2>Viu alguém passando por isso?</h2>
               <div class="reagir_conteudo">
                 <div class="reagir_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img class="rounded" src="img/reagir3.png" alt="Adolescentes rindo de garota passando por cyberbullying" title="Adolescentes rindo de garota passando por cyberbullying"/>
                 </div>
                 <div class="reagir_topicos">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Não apoie tais atitudes. </li>
-                    <li class="list-group-item">Não se coloque em uma posição de perigo.</li>
-                    <li class="list-group-item">Relate a situação na sua escolha.</li>
-                    <li class="list-group-item">Mande uma mensagem de apoio à pessoa que está passando por isso. </li>
+                    <li class="list-group-item">Não apoie as atitudes de cyberbullying </li>
+                    <li class="list-group-item">Não se coloque em uma posição de perigo</li>
+                    <li class="list-group-item">Relate a situação para alguma instituição ou autoridade</li>
+                    <li class="list-group-item">Mande uma mensagem de apoio à pessoa que está passando por isso </li>
                   </ul>
                 </div>
               </div>
+              
+              <p class="referencia text-right">Fonte de pesquisa, textos e/ou imagens: <a href="https://famisafe.wondershare.com/br/no-cyberbullying-on-social-media.html">Famisafe - O Cyberbullying nas redes sociais</a></p>
   
             </div>
           </section>
           
           <!--QUIZZ-->
           <section id="quiz">
-            <h1><a name=""></a>Inserir link para o quizz ou imagem representativa</h1>
+            <h1></h1>
             <div id="setor_quiz">
-              <a href="https://new.safernet.org.br/content/infografico-bullying#">
+              <a href="https://new.safernet.org.br/content/infografico-bullying#" target="_blank">
                 <div id="banner_quiz"> 
                 </div>
               </a>  
@@ -332,7 +365,7 @@
           <!--VÍDEOS-->
           <section class="container-fluid" id="videos">
             <h1>Ao vivo e em cores</h1>
-            <h2>Especialistas e a realidade do cyberbullying</h2>
+            <h3>A realidade do cyberbullying por meio de depoimentos, reportagens e definições</h3>
             <div id="setor_videos">
             
               <div class="card videos_midia">
@@ -398,48 +431,60 @@
             <div id="setor_denuncia">
               
               <div class="conteudo_denuncia">
-                <div class="denuncia_texto">
-                  <p>Procure o canal de comunicação da rede social em que aconteceu o caso para fazer uma denúncia. Muitas delas ainda oferecem ferramentas para denúncia de postagens, fornecem regras e dicas para um convívio saudável.</p>
+                <div class="denuncia_texto align-middle">
+                  <p>Procure o canal de comunicação da rede social em que aconteceu o caso para fazer uma denúncia.</p> 
+                  <p>Muitas delas oferecem ferramentas para denúncia de postagens, fornecem regras e dicas para um convívio saudável.</p>
                 </div>
                 <div class="denuncia_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img src="img/social_media.png" alt="Redes sociais" title="Redes sociais"/>
                 </div>
               </div>
               
               <div class="conteudo_denuncia">
                 <div class="denuncia_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img src="img/safernet.jpg" alt="Logo da SaferNet" title="Logo da SaferNet"/>
                 </div>
-                <div class="denuncia_texto">
+                <div class="denuncia_texto align-middle">
                   <p>A SaferNet Brasil oferece um serviço de recebimento de denúncias anônimas de crimes e violações contra os Direitos Humanos na Internet, contando com procedimentos efetivos e transparentes para lidar com as denúncias, além de suporte governamental e parceria com autoridades. Clique <a href="https://new.safernet.org.br/denuncie#">aqui</a> para acessar o canal de denúncias.</p>
                 </div>
               </div>
               
               <h2>E o SENAI? Como ajuda nessa causa?</h2>
               <div class="conteudo_denuncia">
-                <div class="denuncia_texto">
+                <div class="denuncia_texto align-middle">
                   Sob qualquer caso de bullying e cyberbullying, os profissionais do SENAI estão preparados e abertos para conversar, entender a situação e acompanhar os alunos para o melhor canal de comunicação e denúncia. A equipe inclui professores, coordenação pedagógica e assistência social para lidar com os casos.
                 </div>
                 <div class="denuncia_imagem">
-                  <img src="img/cyber1.jpg" alt="" title=""/>
+                  <img src="img/senai_logo_completo.png" alt="Logo do SENAI" title="Logo da SENAI"/>
                 </div>
               </div>
               
+              <h4>Números e canais de contato</h4>
               <div class="setor_denuncia_contatos">
                 <div class="contato_denuncia">
-                <!--Imagem autoridades policiais-->
+                  <img src="img/logo_policia.jpg" alt="Número em casos de emergência - 190" title="Número em casos de emergência - 190"/>
                 </div>
                 <div class="contato_denuncia">
-                <!--Imagem disque 100-->
+                  <img src="img/disque_cem.png" alt="Número em casos de denúncia aos direitos humanos - 100" title="Número em casos de denúncia aos direitos humanos - 100"/>
                 </div>
                 <div class="contato_denuncia">
-                <!--Email SENAI-->
+                  <div class="contato_senai">
+                    <p class="contato_titulo">SENAI</p>
+                    <p class="contato_titulo">Coordenação pedagógica:</p>
+                    <p>Tel.: (11)98767-2323</p>
+                  </div>
+                  <div class="contato_senai">
+                    <p class="contato_titulo">SENAI</p>
+                    <p class="contato_titulo">Coordenação geral:</p>
+                    <p>Tel.: (11)98767-2323</p>
+                  </div>
                 </div>
               </div>
               
             </div>
           </section>
           
+          <!--BANNER FINALIZAÇÃO-->
           <div id="banner_finalizacao">
           
           </div>
@@ -449,8 +494,19 @@
 
       <!--RODAPÉ-->
       <footer class="fundo_escuro">
-        <div class="conteudo center">
-          
+        <div class="conteudo center" id="footer_conteudos">
+          <div class="conteudo_footer">
+            <img src="img/logo_ajuda.png" alt="Logo da campanha #CompartilheAjuda" title="Logo da campanha #CompartilheAjuda"/>
+          </div>
+          <div class="conteudo_footer text-center">
+            <p>SENAI Prof. Vicente Amato | Jandira - SP</p>
+            <p>Professor Responsável: Fernando Leonid</p>
+            <p>Turma participante: Técnico de Redes - 3° Termo - Manhã | 2020</p>
+            <p>Desenvolvedor: Eduardo A Galvão | <a href="https://br.linkedin.com/in/eduardo-galv%C3%A3o-aa6608152">LinkedIn</a></p>
+          </div>
+          <div class="conteudo_footer">
+            <img src="img/senai_logo_completo.png" alt="Logo do SENAI" title="Logo do SENAI"/>
+          </div>
         </div>
       </footer>
 
