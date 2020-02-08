@@ -352,16 +352,17 @@ nav{
 }
 
 .contato_titulo{
-  color: #049DD9;
+  color: red;
   font-weight: bold;
-}
-
-.contato_senai{
-  width: auto;
 }
 
 .contato_senai p{
   line-height: 1 !important;
+}
+
+#logo_senai{
+  height: 200px; !important
+  width: auto;
 }
 
 /*BANNER - FINALIZAÇÃO*/
@@ -384,6 +385,13 @@ footer{
   width: 100%;
 }
 
+.conteudo_footer{
+  height: 150px;
+  width: 27%;
+  display: flex;
+  align-items: center;
+}
+
 .conteudo_footer img{
   width: auto;
   height: 100px;
@@ -391,6 +399,17 @@ footer{
 
 #footer_conteudos{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  align-content: center;
+}
+
+#dados_criacao{
+  flex-direction: column;
+}
+
+#consideracoes{
+  margin-top: 20px;
+  font-size: 14px; !important
 }
