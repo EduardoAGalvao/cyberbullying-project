@@ -38,4 +38,9 @@ $(document).ready(function() {
         } 
     });
   
+    $(document).on('click', '#toggle_icon', function(){
+      $(this).toggleClass("change");
+      $('#menu').slideToggle().css('display', 'flex');
+    })
+  
 });

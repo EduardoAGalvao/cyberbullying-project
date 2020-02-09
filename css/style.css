@@ -182,7 +182,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: auto;
 }
 
 #descricao_tipos p{
@@ -414,4 +414,408 @@ footer{
 #consideracoes{
   margin-top: 20px;
   font-size: 14px; !important
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  /*PADRONIZAÇÃO*/
+  h1{
+    text-align: center;
+  }
+  
+  .conteudo_circular{
+    border-radius: 40px;
+  }
+  
+  .title_icon{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /*MENU*/
+
+  nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 300;
+    background-color: black;
+  }
+
+  #menu{
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .menu_item{
+    width: auto;
+    height: auto;
+    list-style: none;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+
+  .menu_item a {
+    color: #F2B544;
+    transition: 1s;
+    text-decoration: none;
+  }
+
+  .menu_item a:hover{
+    font-size: 18px; !important
+    transition: 1s;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  #toggle_icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F2B544;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  /*DEFINIÇÃO*/
+  #setor_definicao{
+    height: auto;
+    width: 100%;
+  }
+
+  .conteudo_definicao{
+    width: 100%;
+    height: inherit;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .definicao_texto{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px 0px 50px;
+    box-sizing: border-box;
+  }
+
+  .definicao_texto p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .definicao_imagem{
+    height: auto;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .definicao_imagem img{
+    width: 100%;
+    height: inherit;
+  }
+
+  #descricao_tipos{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  #descricao_tipos p{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #botoes_tipos{
+    margin-top: 20px;
+  }
+
+  #img_tipos{
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /*ESTATÍSTICAS*/
+  #banner_estatisticas{
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/dados_famisafe.png");
+  }
+
+  .conteudo_estatistica_graficos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+
+  .estatistica_grafico{
+    width: 100%;
+    height: inherit;
+  }
+
+  .estatistica_grafico img{
+    width: 100%;
+    height: auto;
+  }
+
+  #icone_calculadora{
+    width: 100px;
+    height: auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+
+  /*COMO REAGIR*/
+  .reagir_conteudo{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 40px 0px;
+  }
+
+  .reagir_topicos{
+    width: 80%;
+    height: inherit;
+  }
+
+  .reagir_imagem{
+    margin: 10px;
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .reagir_imagem img{
+    height: auto;
+    width: inherit;
+  }
+
+  #foto_atingido{
+    width: 250px !important; 
+  }
+
+  #banner_reagir{
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('../img/banner_lidar.png');
+  }
+
+  /*QUIZ*/
+  #setor_quiz{
+    height: 550px;
+  }
+
+  #banner_quiz{
+    background-image: url("../img/banner_quiz.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+    width: 100%;
+  }
+  
+  /*VÍDEOS*/
+  .videos_midia{
+    width: 100%;
+    height: 300px;
+    margin: 30px 0px;
+  }
+
+  #setor_videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /*COMO DENUNCIAR*/
+  .conteudo_denuncia{
+    height: auto;
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .denuncia_texto{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .denuncia_imagem{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .denuncia_texto{
+    line-height: 2.5;
+  }
+
+  .denuncia_texto p {
+    margin-top: 60px;
+  }
+
+  .denuncia_imagem img{
+    height: auto;
+    width: 70%;
+  }
+
+  .setor_denuncia_contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contato_denuncia{
+    width: 100%;
+    height: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .contato_denuncia img{
+    width: 50%;
+    height: auto;
+  }
+
+  .contato_titulo{
+    color: red;
+    font-weight: bold;
+  }
+
+  .contato_senai p{
+    line-height: 1 !important;
+  }
+
+  #logo_senai{
+    height: 200px; !important
+    width: auto;
+  }
+    
+  /*BANNER - FINALIZAÇÃO*/
+  #banner_finalizacao{
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+  }
+
+  #banner_finalizacao img{
+    width: inherit;
+    height: auto;
+  }
+
+  /*FOOTER*/
+  footer{
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+  }
+
+  .conteudo_footer{
+    height: auto;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo_footer img{
+    width: 70%;
+    height: auto;
+  }
+
+  #footer_conteudos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #dados_criacao{
+    flex-direction: column;
+  }
+
+  #consideracoes{
+    margin-top: 20px;
+    font-size: 14px; !important
+  }
+
 }
