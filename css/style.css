@@ -421,6 +421,11 @@ footer{
   
   /*PADRONIZAÇÃO*/
   
+  .container{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
   .conteudo_circular{
     border-radius: 40px;
   }
@@ -432,7 +437,7 @@ footer{
   }
   
   p, li, a{
-    font-size: 3.75rem !important; 
+    font-size: 3.75rem !important;
   }
   
   h1{
@@ -553,7 +558,7 @@ footer{
   #background_abertura{
     background-image: url("../img/abertura_intro_mobile.jpg");
     width: 100%;
-    height: 50%;
+    height: 700px;
   }
 
   /*DEFINIÇÃO*/
@@ -627,7 +632,7 @@ footer{
   
   .texto_tipo,
   #botoes_tipos button{
-    font-size: 3.25rem;
+    font-size: 1.5rem !important;
   }
   
   /*ESTATÍSTICAS*/
@@ -680,15 +685,19 @@ footer{
   }
 
   .reagir_topicos{
-    width: 80%;
+    width: 100%;
     height: inherit;
+  }
+  
+  .reagir_topicos ul li{
+    font-size: 2rem !important;
   }
 
   .reagir_imagem{
     margin: 10px;
     width: auto;
     max-width: 100%;
-    height: inherit;
+    height: auto;
     display: flex;
     justify-content: center;
   }
@@ -815,7 +824,7 @@ footer{
 
   .contato_senai p{
     line-height: 1 !important;
-    font-size: 1.75rem;
+    font-size: 2rem !important;
   }
 
   #logo_senai{
@@ -868,9 +877,9 @@ footer{
     flex-direction: column;
   }
 
-  #consideracoes{
+  #consideracoes p{
     margin-top: 20px;
-    font-size: 1.5rem; !important
+    font-size: 1.5rem !important; 
   }
 
 }
