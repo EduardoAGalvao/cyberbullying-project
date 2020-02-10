@@ -526,13 +526,18 @@ footer{
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-25px, 6px);
     transform: rotate(-45deg) translate(-25px, 6px);
+    margin-left: 50px;
   }
 
-  .change .bar2 {opacity: 0;}
+  .change .bar2 {
+    opacity: 0;
+    margin-left: 50px;
+  }
 
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-24px, -8px);
     transform: rotate(45deg) translate(-24px, -8px);
+    margin-left: 50px;
   }
   
   #background_abertura{
