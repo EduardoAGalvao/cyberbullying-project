@@ -434,10 +434,31 @@ footer{
     margin: 20px;
   }
   
+  p, li, a{
+    font-size: 20px !important; 
+  }
+  
+  h1{
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 2.5rem;
+  }
+  
+  h3{
+    font-size: 2.25rem;
+  }
+  
+  h4{
+    font-size: 2rem;
+  }
+  
   /*MENU*/
 
   nav{
     width: 100%;
+    min-height: 50px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -459,6 +480,7 @@ footer{
   
   .menu_item{
     width: auto;
+    min-height: 50px;
     height: auto;
     list-style: none;
     float: left;
@@ -470,6 +492,7 @@ footer{
 
   .menu_item a {
     color: #F2B544;
+    font-size: 20px;
     transition: 1s;
     text-decoration: none;
   }
@@ -492,26 +515,27 @@ footer{
   #toggle_icon {
     display: inline-block;
     cursor: pointer;
+    margin: 20px;
   }
 
   .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 50px;
+    height: 10px;
     background-color: #F2B544;
     margin: 6px 0;
     transition: 0.4s;
   }
 
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-15px, 6px);
+    transform: rotate(-45deg) translate(-15px, 6px);
   }
 
   .change .bar2 {opacity: 0;}
 
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-14px, -8px);
+    transform: rotate(45deg) translate(-14px, -8px);
   }
   
   #background_abertura{
@@ -548,7 +572,7 @@ footer{
   }
 
   .definicao_texto p{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -782,9 +806,9 @@ footer{
     
   /*BANNER - FINALIZAÇÃO*/
   #banner_finalizacao{
-    height: 500px;
+    height: auto;
     width: 100%;
-    margin: 0px;
+    margin: 50px 0px;
   }
 
   #banner_finalizacao img{
