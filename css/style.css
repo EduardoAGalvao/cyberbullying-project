@@ -335,13 +335,14 @@ nav{
 .setor_denuncia_contatos{
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: auto;
+  align-items:flex-start;
   width: 100%;
   margin-top: 20px;
 }
 
 .contato_denuncia{
-  width: 25%;
+  width: 20%;
   height: inherit;
   align-items: center;
   display: flex;
@@ -349,7 +350,7 @@ nav{
 }
 
 .contato_denuncia img{
-  width: auto;
+  width: 80%;
   height: inherit;
 }
 
