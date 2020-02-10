@@ -420,9 +420,6 @@ footer{
 @media only screen and (max-width: 1000px) {
   
   /*PADRONIZAÇÃO*/
-  h1{
-    text-align: center;
-  }
   
   .conteudo_circular{
     border-radius: 40px;
@@ -435,30 +432,31 @@ footer{
   }
   
   p, li, a{
-    font-size: 20px !important; 
+    font-size: 4rem !important; 
   }
   
   h1{
-    font-size: 3rem;
+    font-size: 5rem;
+    text-align: center;
   }
   
   h2{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
   
   h3{
-    font-size: 2.25rem;
+    font-size: 4.25rem;
   }
   
   h4{
-    font-size: 2rem;
+    font-size: 4rem;
   }
   
   /*MENU*/
 
   nav{
     width: 100%;
-    min-height: 50px;
+    min-height: 100px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -480,7 +478,7 @@ footer{
   
   .menu_item{
     width: auto;
-    min-height: 50px;
+    min-height: 100px;
     height: auto;
     list-style: none;
     float: left;
@@ -492,13 +490,12 @@ footer{
 
   .menu_item a {
     color: #F2B544;
-    font-size: 20px;
     transition: 1s;
     text-decoration: none;
   }
 
   .menu_item a:hover{
-    font-size: 18px; !important
+    font-size: 4rem;
     transition: 1s;
   }
 
@@ -572,7 +569,7 @@ footer{
   }
 
   .definicao_texto p{
-    font-size: 20px;
+    font-size: 4rem;
     text-align: center;
   }
 
@@ -851,7 +848,7 @@ footer{
 
   #consideracoes{
     margin-top: 20px;
-    font-size: 14px; !important
+    font-size: 2rem; !important
   }
 
 }
