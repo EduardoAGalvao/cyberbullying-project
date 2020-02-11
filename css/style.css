@@ -255,7 +255,7 @@ nav{
 /*COMO REAGIR*/
 .reagir_conteudo{
   display: flex;
-  height: 400px;
+  height: auto;
   justify-content: space-around;
   align-items: center;
   align-content: center;
@@ -264,12 +264,12 @@ nav{
  
 .reagir_topicos{
   width: 45%;
-  height: inherit;
+  height: 400px;
 }
 
 .reagir_imagem{
   width: 30%;
-  height: inherit;
+  height: 400px;
 }
 
 .reagir_imagem img{
